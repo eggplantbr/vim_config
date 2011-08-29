@@ -10,8 +10,11 @@ set hidden
 " save the last 100 commands/search terms
 set history=100
 
-" use ; for <Leader>
-let mapleader = ";"    
+" use , for <Leader>
+let mapleader = ","    
+
+" automatically change to the current directory
+nnoremap <Leader>cd :cd %:p:h<CR>:pwd<CR>
 
 "" shortmess settings:
 " f - use "(3 of 5)" instead of "(file 3 of 5)"

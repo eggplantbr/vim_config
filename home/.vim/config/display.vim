@@ -3,8 +3,13 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
 " use the solarized colorscheme
-set background=dark
-colorscheme solarized
+if has("gui_running")
+  syntax enable
+  set background=light
+  colorscheme solarized 
+else
+  colorscheme zenburn 
+endif
 
 set laststatus=2   " always display a status line
 set number         " show line numbers

@@ -13,13 +13,13 @@ function MapToggle(key, opt)
 endfunction
 command -nargs=+ MapToggle call MapToggle(<f-args>)
 
-" ;w saves a buffer
-map <Leader>w :w!<CR>
+" <Leader>w saves a buffer
+map <Leader>s :w!<CR>
 
-" ;q closes a vim-window
+" <Leader>q closes a vim-window
 map <Leader>q :q!<CR>
 
-" navigate among windows using ;[hjkl]
+" navigate among windows using <Leader>[hjkl]
 map <Leader>h <C-W>h
 map <Leader>j <C-W>j
 map <Leader>k <C-W>k
